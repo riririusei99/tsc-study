@@ -1,3 +1,3 @@
-let myName = "太郎";
-// compile時にエラーになる
-myName = 28;
+let num;
+num = 100;
+num = "あいうえお";

@@ -1,11 +1,12 @@
 "use strict";
-var Person = /** @class */ (function () {
-    function Person(name, place, age) {
-        this.name = name;
-        this.place = place;
-        this.age = age;
+var Helpers = /** @class */ (function () {
+    function Helpers() {
     }
-    return Person;
+    Helpers.calcCircum = function (diameter) {
+        return this.PI * diameter;
+    };
+    Helpers.PI = 3.14;
+    return Helpers;
 }());
-var person = new Person("太郎", "東京", 30);
-console.log(person);
+console.log(2 * Helpers.PI);
+console.log(Helpers.calcCircum(83));

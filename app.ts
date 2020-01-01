@@ -1,14 +1,9 @@
 
-class Person {
-
-  constructor(
-    public name: string,
-    private place:string,
-    protected age: number){
-      this.name = name;
-      this.place = place;
-      this.age = age;
+class Helpers {
+  static PI: number = 3.14;
+  static calcCircum(diameter: number){
+    return this.PI * diameter;
   }
 }
-const person = new Person("太郎", "東京", 30);
-console.log(person);
+console.log(2 * Helpers.PI);
+console.log(Helpers.calcCircum(83));

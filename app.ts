@@ -1,5 +1,4 @@
-let num: number = 100;
-let hello: string;
-hello = "こんにちは";
-let yes: boolean;
-yes = true;
+// anyはなんでも良い
+let num: any;
+let car: any = "BMW";
+car = {brand: "BMW"};

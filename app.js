@@ -1,6 +1,5 @@
 "use strict";
-var num = 100;
-var hello;
-hello = "こんにちは";
-var yes;
-yes = true;
+// anyはなんでも良い
+var num;
+var car = "BMW";
+car = { brand: "BMW" };

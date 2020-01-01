@@ -1,4 +1,6 @@
 "use strict";
-var num;
-num = 100;
-num = "あいうえお";
+var num = 100;
+var hello;
+hello = "こんにちは";
+var yes;
+yes = true;

@@ -1,3 +1,5 @@
-let num: number;
-num = 100;
-num = "あいうえお";
+let num: number = 100;
+let hello: string;
+hello = "こんにちは";
+let yes: boolean;
+yes = true;

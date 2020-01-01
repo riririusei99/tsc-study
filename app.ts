@@ -1,9 +1,15 @@
 
-class Helpers {
-  static PI: number = 3.14;
-  static calcCircum(diameter: number){
-    return this.PI * diameter;
+// singleton
+
+class OnlyOne {
+  private static instance: OnlyOne;
+  private constructor(public name: string){};
+  static getInstance(){
+    if (!OnlyOne.instance){
+      OnlyOne.instance = new OnlyOne("The Only One");
+    }
+    return OnlyOne.instance;
   }
 }
-console.log(2 * Helpers.PI);
-console.log(Helpers.calcCircum(83));
+// let wrong = new OnlyOne("The Only One");
+let right = OnlyOne.getInstance();

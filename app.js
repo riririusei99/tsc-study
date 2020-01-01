@@ -1,12 +1,17 @@
 "use strict";
-var Helpers = /** @class */ (function () {
-    function Helpers() {
+// singleton
+var OnlyOne = /** @class */ (function () {
+    function OnlyOne(name) {
+        this.name = name;
     }
-    Helpers.calcCircum = function (diameter) {
-        return this.PI * diameter;
+    ;
+    OnlyOne.getInstance = function () {
+        if (!OnlyOne.instance) {
+            OnlyOne.instance = new OnlyOne("The Only One");
+        }
+        return OnlyOne.instance;
     };
-    Helpers.PI = 3.14;
-    return Helpers;
+    return OnlyOne;
 }());
-console.log(2 * Helpers.PI);
-console.log(Helpers.calcCircum(83));
+// let wrong = new OnlyOne("The Only One");
+var right = OnlyOne.getInstance();

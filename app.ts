@@ -1,19 +1,7 @@
 
-// union型 - 共同体型、合併型
-
-let thisYear: number | string = "2019";
-thisYear = 2019;
-
-function checkLength(str: string | null): number{
-  if (str != null){
-    return str.length;
-  } else {
-    return 0;
-  }
+function addNum1(value1: number, value2: number): number{
+  return value1 + value2;
 }
 
-// 使用していないパラメータに対してerrorを出す。
-function controlMe(isTrue: boolean){
-  let result: number = 12;
-  return result;
-}
+// ES6
+const addNum2 = (value1: number, value2: number): number => value1 + value2;

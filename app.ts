@@ -11,3 +11,9 @@ function checkLength(str: string | null): number{
     return 0;
   }
 }
+
+// 使用していないパラメータに対してerrorを出す。
+function controlMe(isTrue: boolean){
+  let result: number = 12;
+  return result;
+}

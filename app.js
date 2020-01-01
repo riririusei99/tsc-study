@@ -10,3 +10,8 @@ function checkLength(str) {
         return 0;
     }
 }
+// 使用していないパラメータに対してerrorを出す。
+function controlMe(isTrue) {
+    var result = 12;
+    return result;
+}

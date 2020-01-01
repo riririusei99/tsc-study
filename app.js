@@ -1,8 +1,6 @@
 "use strict";
-// never エラーを含む処理結果をなくす
-function noReturn() {
-    throw new Error("エラーです！");
+// 引数についても型を引数を指定する必要がある
+function multiply(value1, value2) {
+    return value1 * value2;
 }
-// never以外を受け付けない
-var something;
-something = 0;
+console.log(multiply(23, 12));

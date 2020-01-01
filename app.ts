@@ -1,9 +1,5 @@
-
-// never エラーを含む処理結果をなくす
-function noReturn(): never{
-  throw new Error("エラーです！");
+// 引数についても型を引数を指定する必要がある
+function multiply(value1: number, value2: number): number{
+  return value1 * value2;
 }
-
-// never以外を受け付けない
-let something: never;
-something = 0;
+console.log(multiply(23, 12)); 

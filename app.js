@@ -1,12 +1,8 @@
 "use strict";
-// 文字列を返す関数を書く
-var myName = "太郎";
-// 文字列のみの返り値を許可する
-function returnMyName() {
-    return myName;
+// never エラーを含む処理結果をなくす
+function noReturn() {
+    throw new Error("エラーです！");
 }
-console.log(returnMyName());
-// void 戻り値を許可しない
-function sayHello() {
-    console.log("Hello!");
-}
+// never以外を受け付けない
+var something;
+something = 0;

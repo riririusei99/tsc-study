@@ -1,11 +1,19 @@
 "use strict";
-// デフォルトの引数を定義する
-var countDown = function (start) {
-    if (start === void 0) { start = 15; }
-    while (start > 0) {
-        console.log(start);
-        start--;
+//レスト演算子
+function makeArray() {
+    var args = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        args[_i] = arguments[_i];
     }
-    console.log("終了");
-};
-countDown();
+    return args;
+}
+console.log(makeArray(1, 2));
+// tupleも使える
+function printInfo() {
+    var info = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        info[_i] = arguments[_i];
+    }
+    console.log("私の名前は" + info[0] + "で、" + info[1] + "歳です。");
+}
+printInfo("太郎", 30);

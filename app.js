@@ -1,9 +1,11 @@
 "use strict";
-// arrow関数では引数が1つだけの時丸括弧を省略できる
-// TypeScriptを使う場合はエラーになるので丸括弧をつける方が良さそう
-var mulNum = function (value) { return value * 2; };
-console.log(mulNum(3));
-var outputString = function (text) {
-    console.log(text);
+// デフォルトの引数を定義する
+var countDown = function (start) {
+    if (start === void 0) { start = 15; }
+    while (start > 0) {
+        console.log(start);
+        start--;
+    }
+    console.log("終了");
 };
-console.log("こんにちは！");
+countDown();

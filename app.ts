@@ -1,2 +1,3 @@
-let hobbies = ["読書","スポーツ"];
-console.log(typeof hobbies); //object
+let hobbies: string[] = ["読書","スポーツ"];
+hobbies[0] = "100";
+hobbies.push(true);

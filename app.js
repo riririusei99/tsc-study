@@ -15,3 +15,6 @@ var OnlyOne = /** @class */ (function () {
 }());
 // let wrong = new OnlyOne("The Only One");
 var right = OnlyOne.getInstance();
+console.log(right.name);
+right.name = "changed!";
+console.log(right.name);

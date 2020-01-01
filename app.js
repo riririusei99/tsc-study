@@ -1,20 +1,17 @@
 "use strict";
-// singleton
-var OnlyOne = /** @class */ (function () {
-    function OnlyOne(name) {
-        this.name = name;
+var MyMath;
+(function (MyMath) {
+    var PI = 3.14;
+    function calcCircum(diameter) {
+        return diameter * PI;
     }
-    ;
-    OnlyOne.getInstance = function () {
-        if (!OnlyOne.instance) {
-            OnlyOne.instance = new OnlyOne("The Only One");
-        }
-        return OnlyOne.instance;
-    };
-    return OnlyOne;
-}());
-// let wrong = new OnlyOne("The Only One");
-var right = OnlyOne.getInstance();
-console.log(right.name);
-right.name = "changed!";
-console.log(right.name);
+    MyMath.calcCircum = calcCircum;
+    function calcRect(height, width) {
+        return height * width;
+    }
+    MyMath.calcRect = calcRect;
+})(MyMath || (MyMath = {}));
+console.log(MyMath.calcCircum(3));
+console.log(MyMath.calcRect(20, 8));
+var PI = 2.14;
+console.log(PI);

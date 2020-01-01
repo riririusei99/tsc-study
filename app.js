@@ -1,10 +1,8 @@
 "use strict";
-function multiply(value1, value2) {
-    return value1 * value2;
-}
-function sayHello() {
-    console.log("Hello!");
-}
-var myFunctionType;
-myFunctionType = multiply;
-console.log(myFunctionType(23, 89));
+var userData = {
+    name: "太郎",
+    age: 30
+};
+// TypeScriptでは追加もできない
+userData["place"] = "東京"; // javascriptではOK
+console.log(userData["place"]);

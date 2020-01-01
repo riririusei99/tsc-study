@@ -1,8 +1,7 @@
 "use strict";
-var userData = {
-    name: "太郎",
-    age: 30
+var complex = {
+    data: [100, 3.14, -3],
+    output: function (all) {
+        return this.data;
+    }
 };
-// TypeScriptでは追加もできない
-userData["place"] = "東京"; // javascriptではOK
-console.log(userData["place"]);

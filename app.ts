@@ -1,10 +1,10 @@
-let userData: {
-  name: string,
-  age: number
+
+let complex: {
+    data: number[],
+    output: (all: boolean) => number[]
 } = {
-  name: "太郎",
-  age: 30
+  data: [100, 3.14, -3],
+  output: function(all: boolean): number[]{
+    return this.data;
+  }
 };
-// TypeScriptでは追加もできない
-userData["place"] = "東京"; // error
-console.log(userData["place"]);

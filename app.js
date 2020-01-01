@@ -1,11 +1,12 @@
 "use strict";
-// 列挙型 - enum
-var Colors;
-(function (Colors) {
-    Colors[Colors["Gray"] = 0] = "Gray";
-    Colors[Colors["Green"] = 100] = "Green";
-    Colors[Colors["Blue"] = 101] = "Blue"; // 101 指定しない限り値が１ずつ増加する
-})(Colors || (Colors = {}));
-var myColor = Colors.Green;
-console.log(myColor);
-console.log(Colors.Blue);
+// 文字列を返す関数を書く
+var myName = "太郎";
+// 文字列のみの返り値を許可する
+function returnMyName() {
+    return myName;
+}
+console.log(returnMyName());
+// void 戻り値を許可しない
+function sayHello() {
+    console.log("Hello!");
+}

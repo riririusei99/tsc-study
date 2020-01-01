@@ -1,10 +1,12 @@
-// 列挙型 - enum
-
-enum Colors {
-  Gray, // 0
-  Green = 100, // 100
-  Blue // 101 指定しない限り値が１ずつ増加する
+// 文字列を返す関数を書く
+let myName = "太郎"
+// 文字列のみの返り値を許可する
+function returnMyName(): string{
+  return myName;
 }
-let myColor: Colors = Colors.Green;
-console.log(myColor);
-console.log(Colors.Blue);
+console.log(returnMyName());
+
+// void 戻り値を許可しない
+function sayHello(): void{
+  console.log("Hello!");
+}

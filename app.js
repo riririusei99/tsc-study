@@ -1,7 +1,12 @@
 "use strict";
-var complex2 = {
-    data: [123, 8686868, 1, 9],
-    output: function (flag) {
-        return this.data;
+// union型 - 共同体型、合併型
+var thisYear = "2019";
+thisYear = 2019;
+function checkLength(str) {
+    if (str != null) {
+        return str.length;
     }
-};
+    else {
+        return 0;
+    }
+}

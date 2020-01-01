@@ -1,5 +1,3 @@
 "use strict";
-// anyはなんでも良い
-var num;
-var car = "BMW";
-car = { brand: "BMW" };
+var hobbies = ["読書", "スポーツ"];
+console.log(typeof hobbies); //object

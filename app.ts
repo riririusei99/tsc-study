@@ -1,4 +1,2 @@
-// anyはなんでも良い
-let num: any;
-let car: any = "BMW";
-car = {brand: "BMW"};
+let hobbies = ["読書","スポーツ"];
+console.log(typeof hobbies); //object

@@ -1,7 +1,7 @@
 "use strict";
-var complex = {
-    data: [100, 3.14, -3],
-    output: function (all) {
+var complex2 = {
+    data: [123, 8686868, 1, 9],
+    output: function (flag) {
         return this.data;
     }
 };

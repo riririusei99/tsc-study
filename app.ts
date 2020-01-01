@@ -1,7 +1,10 @@
 
-function addNum1(value1: number, value2: number): number{
-  return value1 + value2;
-}
+// arrow関数では引数が1つだけの時丸括弧を省略できる
+// TypeScriptを使う場合はエラーになるので丸括弧をつける方が良さそう
+const mulNum = (value: number) => value * 2;
+console.log(mulNum(3));
 
-// ES6
-const addNum2 = (value1: number, value2: number): number => value1 + value2;
+const outputString = (text: string): void => {
+  console.log(text);
+}
+console.log("こんにちは！")

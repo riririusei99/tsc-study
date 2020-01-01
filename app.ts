@@ -1,7 +1,10 @@
-// 配列の中に型名を列挙することで、明示的に限定することができる。
-// タプル - tuple
-// 注意点：タプルとして明示的に宣言した場合、順番を守る必要がある。
-let olympic: [string, number] = ["東京", 2020];
-// error
-olympic[0] = 2024;
-olympic[1] = "パリ"
+// 列挙型 - enum
+
+enum Colors {
+  Gray, // 0
+  Green = 100, // 100
+  Blue // 101 指定しない限り値が１ずつ増加する
+}
+let myColor: Colors = Colors.Green;
+console.log(myColor);
+console.log(Colors.Blue);

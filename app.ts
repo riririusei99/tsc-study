@@ -1,4 +1,7 @@
-// 複数の型を許可する場合はanyの配列にする
-let hobbies: any[] = ["読書","スポーツ"];
-hobbies[0] = 100;
-hobbies.push(true);
+// 配列の中に型名を列挙することで、明示的に限定することができる。
+// タプル - tuple
+// 注意点：タプルとして明示的に宣言した場合、順番を守る必要がある。
+let olympic: [string, number] = ["東京", 2020];
+// error
+olympic[0] = 2024;
+olympic[1] = "パリ"

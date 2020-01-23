@@ -4,11 +4,12 @@ function greet(person) {
 }
 var person = {
     name: "太郎",
-    age: 30
+    age: 30,
+    hobbies: ["game", "sports"]
 };
 function changeName(person) {
     person.name = "権兵衛";
 }
-greet(person);
+greet({ name: "太郎", age: 30 });
 changeName(person);
 greet(person);

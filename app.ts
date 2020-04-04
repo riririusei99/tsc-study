@@ -38,3 +38,13 @@ class Person implements NamedPerson {
 const myPerson = new Person("誰かさん");
 greet(myPerson);
 myPerson.greet("どこかの");
+
+interface DoubleValues {
+    (number1: number, number2: number): number;
+}
+
+let myDoubleFunction: DoubleValues;
+myDoubleFunction = (value1: number, value2: number) => {
+    return (value1 + value2) * 2;
+};
+console.log(myDoubleFunction(10,20));

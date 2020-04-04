@@ -48,3 +48,15 @@ myDoubleFunction = (value1: number, value2: number) => {
     return (value1 + value2) * 2;
 };
 console.log(myDoubleFunction(10,20));
+
+interface AgedPerson extends NamedPerson {
+    age: number;
+}
+const oldPerson: AgedPerson = {
+    name: "JohnDoe",
+    greet(lastName: string){
+        console.log("Hello, " + lastName + this.name + "!");
+    },
+    age: 35
+};
+console.log(oldPerson);

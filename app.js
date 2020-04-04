@@ -17,3 +17,15 @@ function changeName(person) {
 changeName(person);
 greet(person);
 person.greet("名無しの");
+var Person = /** @class */ (function () {
+    function Person(name) {
+        this.name = name;
+    }
+    Person.prototype.greet = function (lastName) {
+        console.log("こんにちは、" + lastName + this.name + "!");
+    };
+    return Person;
+}());
+var myPerson = new Person("誰かさん");
+greet(myPerson);
+myPerson.greet("どこかの");

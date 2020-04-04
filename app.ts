@@ -24,3 +24,17 @@ function changeName(person: NamedPerson){
 changeName(person);
 greet(person);
 person.greet("名無しの");
+
+class Person implements NamedPerson {
+    name: string;
+    constructor(name: string){
+        this.name = name;
+    }
+    greet(lastName: string){
+      console.log("こんにちは、" + lastName + this.name + "!");
+    }
+}
+
+const myPerson = new Person("誰かさん");
+greet(myPerson);
+myPerson.greet("どこかの");
